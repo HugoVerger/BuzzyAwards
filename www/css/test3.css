@@ -58,14 +58,11 @@ h2 {
 	display: none;
 }
 
-#timer {	
+#target {
 	position: absolute;
-    height: 10%;
-    width: 20%;
-	top: 15%;
 	border: 0px;
-	left: 40%;
-	display: none;
+	overflow: visible;
+	z-index: 1;
 }
 
 .btn {

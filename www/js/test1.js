@@ -2,7 +2,7 @@ trynumber = 1;
 average = 0;
 nbtm = false;
 
-	
+
 function changecolor() {
 	if (nbtm)
 	{
@@ -14,8 +14,7 @@ function changecolor() {
 		$("#btn").css("display", "none");
 		$("#result").css("display", "none");
 
-		//var timer = 2000 + Math.random() * 2000;
-		var timer = 500;
+		var timer = 1000 + Math.random() * 3000;
 		setTimeout(function(){
 			$("body").css("background-color", "red");
 			var start = new Date().getTime();
@@ -39,14 +38,19 @@ function changecolor() {
 					$("#result").append('Average: ' + format(average) + 'ms</br>');
 					$("#btn").html("Next Test");
 					nbtm = true;
-					localStorage.setItem(1, average);
+					localStorage.setItem(1337, average);
+					$("#btn2").css("display", "block");
 				}
 			});
 		}, timer);
 	}
 }
 
-function format(n){
+function back() {
+	document.location.href="index.html";
+}
+
+function format(n) {
 	if (n < 10)
 	{
 		return "00" + n;

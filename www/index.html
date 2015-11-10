@@ -3,16 +3,25 @@
     <head>
         <meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<script type="text/javascript">
-			function redirect() {
-				document.location.href="test1.html";
-			}
-		</script>
-        <title>Welcome</title>
+		<script type="text/javascript" src="js/index.js"></script>
+        <title>Test Room</title>
     </head>
-    <body>
-		<div id="intro">
-			<h1 onclick="redirect();">Test your skills</h1>
-		</div>
+    <body >
+		<h1>Welcome to your test room</br>Click on a test to start</h1>
+		<table class="intro">
+			<tr onclick="redirect_test1();">
+				<td>Reaction Time:</td>
+				<td id="result1" class="right">no result yet</td>
+			</tr>
+			<tr onclick="redirect_test2();">
+				<td>Click per minute:</td>
+				<td id="result2" class="right">no result yet</td>
+			</tr>
+			<tr onclick="redirect_test3();">
+				<td>Accuracy:</td>
+				<td id="result3" class="right">no result yet</td>
+			</tr>
+		</table>
+		<!--<img class="counter" src="http://counter7.fcs.ovh/private/freecounterstat.php?c=354351e19d3e5907b7051019c8cbed28">-->
     </body>
 </html>
