@@ -11,6 +11,7 @@ function start() {
 		$("#btn").css("display", "none");
 		$("#result").css("display", "block");
 		$("#target").html('<img src="target.png">');
+		$("#timer").css("display", "block");
 		var targethit = 0;
 
 		var x = 5 + Math.random() * 85 + "%";
@@ -36,7 +37,7 @@ function start() {
 			nbtm = true;
 			localStorage.setItem(1339, targethit);
 			$("#btn2").css("display", "block");
-		}, 15000);
+		}, 24000);
 	}
 }
 

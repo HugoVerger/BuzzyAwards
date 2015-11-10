@@ -18,8 +18,8 @@ function changecolor() {
 		setTimeout(function(){
 			$("body").css("background-color", "red");
 			var start = new Date().getTime();
-			$(this).click(function() {
-				$(this).unbind("click");
+			$(this).mousedown(function() {
+				$(this).unbind("mousedown");
 				$("body").css("background-color", "black");
 				var end = new Date().getTime();
 				var time = end - start;

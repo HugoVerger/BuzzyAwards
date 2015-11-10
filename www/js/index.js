@@ -6,7 +6,7 @@ window.onload = function() {
 	}
 	if (localStorage.getItem(1338) != null)
 	{
-		var click = localStorage.getItem(1338)*5 + " per minute";
+		var click = localStorage.getItem(1338)*5;
 		document.getElementById("result2").innerHTML = click;
 	}
 	if (localStorage.getItem(1339) != null)
