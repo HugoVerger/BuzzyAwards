@@ -8,6 +8,7 @@
 		<meta property="og:description"   content="Test your skills with minigames!" />
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
         <title>Test Room</title>
     </head>
     <body>
@@ -24,18 +25,21 @@
 		<h1>Welcome to your test room</br>Click on a test to start</h1>
 		<table class="intro">
 			<tr onclick="redirect_test1();">
-				<td>1. Reaction Time:</td>
-				<td id="result1" class="right">no result yet</td>
+				<td class="left">1. Reaction Time:</td>
+				<td id="result1">no result yet</td>
+				<td id="comment1"></td>
 			</tr>
 			<tr onclick="redirect_test2();">
-				<td>2. Clicks per minute:</td>
-				<td id="result2" class="right">no result yet</td>
+				<td class="left">2. Clicks per minute:</td>
+				<td id="result2">no result yet</td>
+				<td id="comment2"></td>
 			</tr>
 			<tr onclick="redirect_test3();">
-				<td>3. Accuracy:</td>
-				<td id="result3" class="right">no result yet</td>
+				<td class="left">3. Targets per minute:</td>
+				<td id="result3">no result yet</td>
+				<td id="comment3"></td>
 			</tr>
-			<tr onclick="redirect_test3();">
+			<tr>
 				<td></td>
 				<td style="padding-top: 10px; text-align:right"><div class="fb-share-button" data-href="http://dadri2.olympe.in/index.html" data-layout="button"></div></td>
 			</tr>

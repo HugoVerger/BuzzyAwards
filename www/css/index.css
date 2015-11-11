@@ -1,6 +1,6 @@
 body {
 	background-color: black;
-    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: Calibri, 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     margin:0px;
     padding:0px;
@@ -32,11 +32,31 @@ td {
     text-align:center;
 	text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 	cursor:pointer;
-	text-align:left;
+	text-align:right;
 }
 
-.right {
-	text-align: right;
+.bad {
+	color: Red;
+	text-shadow: 0px 0px 10px rgba(255, 0, 0, 1);
+}
+
+.average {
+	color: Yellow;
+	text-shadow: 0px 0px 10px rgba(255, 255, 0, 1);
+}
+
+.good {
+	color: Green;
+	text-shadow: 0px 0px 10px rgba(0, 255, 0, 1);
+}
+
+.verygood {
+	color: Chartreuse ;
+	text-shadow: 0px 0px 10px rgba(127, 255, 0, 1);
+}
+
+.left {
+	text-align: left;
 }
 
 .counter {
